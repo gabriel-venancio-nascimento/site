@@ -25,19 +25,54 @@
         }
 
         #layout{
-                font-size: 1em;         /* herda do pai ( o body) e mutiplica os pixels se nescessarío*/
-                display: flex;
-                font-style: italic;     /* Estilo da fonte: italic, oblique, normal*/
-                line-height: 25px;      /* Espaçamento de linhas*/
-                font-weight: 500;       /* Negrito CSS 100 a 900 - bold=400 - bolder=900*/
+                font-size: 1em;            /* herda do pai ( o body) e mutiplica os pixels se nescessarío*/
+                display: flex;             /* Usado para */
+                /*flex-direction: column;    /* Usado para definir a direção dos elementos que são filhos de um display flex*/
+                font-style: italic;        /* Estilo da fonte: italic, oblique, normal*/
+                line-height: 25px;         /* Espaçamento de linhas*/
+                font-weight: 500;          /* Negrito CSS 100 a 900 - bold=400 - bolder=900*/
                 text-transform: none;      /*Capitalização do texto: uppercase - lowercase - capitaliza - none=sem efeito*/                        
                 text-decoration: none;     /*Cria um sumblinhado de texto que tem varias "formas": double - dotted - dashed - wavy - none*/
-                word-spacing: 2px;      /* Espaçamento entre palavras*/
-                letter-spacing: 1px;    /* Espaçamento entre letras*/
-                text-indent: 20px;      /* Cria um espaço antes de começar o paragráfo*/
-                text-align: justify;     /* Alinhamento do texto left - rigth - justify - center*/
+                word-spacing: 2px;         /* Espaçamento entre palavras*/
+                letter-spacing: 1px;       /* Espaçamento entre letras*/
+                text-indent: 20px;         /* Cria um espaço antes de começar o paragráfo*/
+                text-align: justify;       /* Alinhamento do texto left - rigth - justify - center*/
+
+        
+                /* Porcesso passo a passo que seria para fazer a borda(estilo,espessura e cor)-
+                border-style: dashed;         /* Estilo da borda: solid - dashed - dotted - double - groove - ridge - inset - ouset 
+                border-width: 5px;              /* Espessura da borda
+                border-color: rgb(52,235,164);  /* Cor da borda*/
+
+                border: solid 5px #458545; /* Definir estilo, espessura e cor da borda numa mesma linha*/
+                
+                border-top: solid 5px #458545;
+                border-left: solid 5px #458545;
+                border-bottom: solid 5px #458545;
+                /* border-right: estilizar o lado direito da borda*/
+                border-radius: 50px; /* Arrendodar cantos das bordas -px - %*/
+
+                margin: 20px 20px 20px 20px; /* Margem do lado de fora da borda*/
+                margin-left: 20px;      /*Margem a esquerda*/
+                margin-right: 20px;     /*Margem a direita*/
+                margin-bottom: 20px;    /*Margem a baixo */
+                margin-top: auto;       /*Margem a cima*/
+
+                padding: 20px 60px;     /*Margem dentro da borda*/
+                /*todos os lados representados linha por linha*/
+                padding-left: 20px;
+                padding-right: 20px;      
+                padding-top: 20px;  
+                padding-bottom: 20px;
+
         }
+               
 
         NAV a {
                 text-decoration: none; /* Aqui tiramos os sumblinhados da parte onde navega entre as paginas*/
         }
+
+        /*.teste_display{
+                background-color: #094409; /* Deixa o texto marcado da cor escolhida
+                display: inline-block; 
+        }*/

@@ -70,9 +70,74 @@
 
         NAV a {
                 text-decoration: none; /* Aqui tiramos os sumblinhados da parte onde navega entre as paginas*/
+                 font-weight: 500;
+             
+
         }
 
         /*.teste_display{
                 background-color: #094409; /* Deixa o texto marcado da cor escolhida
                 display: inline-block; 
         }*/
+
+
+        /*Aula sobre estilização de lista*/
+
+        #teste_estilo_lista_ul{
+                list-style-type: none ; /*disc, circle, none : define o estilo de marcador da lista não ordenada (UL)*/
+
+        }
+
+         #teste_estilo_lista_ol{
+                list-style-type: lower-roman; /*(decimal, lower-roman, upper-roman, lower-greek=numeros),(lower-alpha, upper-alpha=letras), definem o estilo de marcadores de listas ordenadas.*/
+                list-style-image: url('img/seta_direita_vermelha.png');
+                
+        }
+
+        li{
+                border:solid 3px #458545;
+                list-style-position: outside; /* Ele serve para dizer ao navegador se o marcador da lista faz parte ou não do texto da lista: inside ou outside*/
+
+        }
+
+        #impacto{
+                /*background-image: url(img/senhordosaneis_fundo.jpg) no-repeat; resume a imagem de fundo e repetição de uma linha*/
+                background-image: url(img/senhordosaneis_fundo.jpg); /* Carrega imagem ao fundo do elemento html*/
+                background-repeat: no-repeat ; /* configura a forma da imagem ira repetir ao fundo do elemetp html= no-repeat, repeat, repeat-y/x*/
+
+                /*background-position: center; Posição da imagem, pode duas posição ao mesmo tempo desde que façam sentido, esquerda topo -left, top
+                width: 2000px
+                height: 1500*/
+
+                background-size: cover; /* Serve para definir como a imagem será exibida ao fundo do elemento html= contain, cover, px, %, auto*/
+                background-attachment: fixed; /*  Define como a imagem vai lidar com o scroll ao fundo do elemento HTML= scroll e fixed*/
+                text-shadow: 2px 1px 1px #458545; /*Define a sombra do texto*/
+        }
+
+        .noticia{ /* Atributo principal*/
+                border: solid #458545;
+                width: 200px;
+                position: fixed; /* Define o posicionamento atrás ou na frente dos elementos do HTML= fixed, relative, absolute e static*/
+                height: 100px;
+                overflow: visible; /* Trata o comportamento de quanto por exemplo um texto passa das bordas de um elemento HTML (da um overflow)*/
+                box-shadow: 3px 3px 3px 3px black; /* Define a sombra de um elemento html de*/
+        }
+
+        .um{ /* Atributos segundarios*/
+                background-color: rgb(3, 3, 175);
+                top: 0px;
+                left: 50px;
+                z-index: 3; /* Define a ordem de como o elemento vai ficar uns atras dos outros*/
+        }
+        .dois{ /* Atributos segundarios*/
+                background-color: rgb(4, 71, 255);
+                top:100px;
+                left: 150px;
+        }
+        
+        .tres{ /* Atributos segundarios*/
+                background-color: rgb(0, 132, 255);
+                top: 200px;
+                left: 250px;
+        }
+        

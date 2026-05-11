@@ -68,11 +68,75 @@
         }
                
 
-        NAV a {
+        nav a {
                 text-decoration: none; /* Aqui tiramos os sumblinhados da parte onde navega entre as paginas*/
-                 font-weight: 500;
+                color: white;
              
 
+        }
+
+        nav a:hover {
+                color: black;
+                opacity: 0.7;
+        }
+
+        .transicao{
+                background-color: white;
+                border:solid3 px red;
+                color: black;
+                width: 300px;
+                height: 300px;
+                transition-duration: 1s ; /* Define o tempo de transmição */
+                transition-property: all; /*Define quais propriedades do css vão entrar na transição(nome das propriedades/ all)*/
+                transition-delay: 0.3s; /*Delay para iniciar a transição*/
+                transition-timing-function: ease-in-out; /* ease //ease-in // easi-out // ease-in=out // linear*/
+
+
+        }
+
+        .transicao:hover{
+                background-color: pink;
+                width: 600px;
+                color: blue;
+
+
+        }
+
+        #email:focus{
+                background-color: green;
+                color:white;
+
+        }
+
+        h1{
+                animation-name: multicolor;
+                animation-duration: 2s;
+                animation-delay: 0s;
+                animation-fill-mode: forwards; /* forwards - backwards*/
+                animation-iteration-count: infinite; /* Quantidade de animações / infinite*/
+
+        }
+
+        @keyframes multicolor{
+                from{ color: red;}
+                to{color: rgb(0, 83, 32);}
+
+        }
+
+        .animacao img{
+                display :block;
+                animation: foguete;
+                animation-duration: 5s;
+                animation-interation-count: infinite;
+
+        }
+
+        @keyframes foguete {
+                0%{margin-left: 0%}
+                25%{margin-left: 80%; transform: rotate(0deg)}   
+                50%{margin-left: 80%; transform: rotate(-120deg)}
+                75%{margin-left: 0%; transform: rotate(-120deg)}
+                100%{margin-left: 0%; transform: rotate(0deg)}
         }
 
         /*.teste_display{
